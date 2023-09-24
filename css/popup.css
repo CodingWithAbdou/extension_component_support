@@ -1,0 +1,14 @@
+body {
+    width: 300px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding-block: .4rem;
+}
