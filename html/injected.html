@@ -1,10 +1,100 @@
+
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-    body {
-        font-family: 'Cairo', sans-serif;
-    }
 
+#toni {
+    width: 440px;
+    background: #fafafa;
+    color: #333;
+    font-family: 'Cairo', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: normal;
+    position: fixed;
+    top: 100px;
+    right: 25px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20px;
+    animation-name:  open-smoth ;
+    animation-duration: 1s;
+    box-shadow: 0 0 0 #333;
+    z-index: 2147483647;
+    overflow: hidden;
+}
 
+.toni_header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.toni_header .toni_h3 {
+    flex: 1;
+} 
+
+.toni_btn {
+    border: none;
+    background: transparent;
+}
+
+.toni_boxs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    max-height: calc(100vh - 150px );
+    overflow-y: auto;
+}
+
+.toni_box {
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.toni_description {
+    color: #04aa6d;
+    font-size: 1.5rem;
+}
+
+.toni_min_code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.2rem .8rem;
+    padding-inline: 1.6rem;
+} 
+.toni_min_code .toni_btn {
+    padding: .6rem 1.2rem;
+    color: #fff;
+    border-radius: 20px;
+    background: #04aa6d;
+}
+
+@keyframes open-smoth {
+    from {right: -410px;}
+    to {right: 25px;}
+}
 </style>
+    
+<div class="toni_container">
+    <header class="toni_header">
+        <button id="toni_btn-close" class="toni_btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        </button>
+        <h3 class="toni_h3">Toni</h3>
+    </header>
 
-<div class="toni-test">test</div>
+    <div class="toni_boxs" id="toni_box">
+    </div>
+</div>
+
+    
+    
+    
