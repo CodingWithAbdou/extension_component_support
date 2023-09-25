@@ -14,3 +14,8 @@ for(let i =0 ; i < sites.length ; i++ ) {
     li.innerHTML = link.host 
     document.getElementById('site').append(li)
 }
+
+if(defaultLang == 'en') {
+    document.querySelector('.h1').innerHTML = "Welcome In Toni Extension"
+    document.querySelector('.paragreph').innerHTML = 'This Extension Just Work In Link Below'
+}

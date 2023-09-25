@@ -14,18 +14,18 @@
 
     "action": {
         "default_icon": "icons/icone-192.png",
-        "default_popup": "html/popup.html",
+        "default_popup": "popup/popup.html",
         "default_title": "componentes"
     },
 
 	"content_scripts": [{
-		"js": [ "js/sites.js" , "js/jquery-3.7.0.min.js", "js/content.js"],
+		"js": [ "app.js", "content/content.js"],
 		"matches": ["<all_urls>"],
 		"run_at": "document_idle"
 	}],
 
     "web_accessible_resources": [{
-		"resources": ["html/injected.html"],
+		"resources": ["content/injected.html"],
 		"matches": ["<all_urls>"],
 		"extension_ids": []
     }],

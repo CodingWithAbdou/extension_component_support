@@ -1,6 +1,6 @@
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 
 #toni {
     width: 440px;
@@ -24,7 +24,8 @@
 }
 
 .toni_header {
-    width: 100%;
+    width: 100% !important;
+    height: 70px !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +48,8 @@
     display: flex;
     flex-direction: column;
     padding: 1.5rem;
-    max-height: calc(100vh - 150px );
+    max-height: calc(100vh - 180px );
+    border: 1px solid #ddd;
     overflow-y: auto;
 }
 
@@ -70,11 +72,27 @@
     padding-block: 1.2rem .8rem;
     padding-inline: 1.6rem;
 } 
+
 .toni_min_code .toni_btn {
     padding: .6rem 1.2rem;
     color: #fff;
     border-radius: 20px;
     background: #04aa6d;
+}
+
+
+.toni_boxs::-webkit-scrollbar {
+    width: 12px;   
+}
+
+.toni_boxs::-webkit-scrollbar-track {
+  background: #fafafa;        /* color of the tracking area */
+}
+
+.toni_boxs::-webkit-scrollbar-thumb {
+  background-color: #04aa6d;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid #fafafa;  /* creates padding around scroll thumb */
 }
 
 @keyframes open-smoth {
