@@ -2,9 +2,10 @@
     "manifest_version": 3,
     "version": "0.1",
     "author": "khaldi abdou  @https://khamsat.com/user/khaldi_abdou",
+    
     "name": "__MSG_appName__",
     "description": "__MSG_appDesc__",
-    "default_locale": "ar",
+    "default_locale": "en",
 
     "icons": {
         "16": "icons/icone-16.png",

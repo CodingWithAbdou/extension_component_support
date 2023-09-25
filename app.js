@@ -1,8 +1,12 @@
-let defaultLang = 'en'
+let defaultLang = 'ar'
+let arbicFont = "https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap"
+let englishFont = "https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+
+
 let setting = [
     {
         url : "https://khamsat.com/",
-        lang: 'ar',
+        lang: 'en',
         components : [
             {
                 code: 'AU7Y',

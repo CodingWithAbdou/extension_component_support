@@ -51,19 +51,34 @@ function load () {
     };
     request.send();
 }
-
+{/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link> */}
+{/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> */}
 function actionInConenten(toni) {
-    document.getElementById('toni_btn-close').addEventListener('click' , () => {
-        toni.remove()
-    })
-    
-
     for (let i=0 ; i < setting.length ; i++) {
         if (setting[i].url == base_url) {
             components = setting[i].components
             row = i
         }
     }
+
+    const link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+
+    if(setting[row].lang == 'ar') {
+        link.setAttribute('href', arbicFont);
+        toni.classList.add('ar')
+    }else {
+        link.setAttribute('href', englishFont);
+        toni.classList.add('en')
+    }
+    document.head.appendChild(link)
+
+    document.getElementById('toni_btn-close').addEventListener('click' , () => {
+        toni.remove()
+    })
+
 
     createBoxs(components)
 
